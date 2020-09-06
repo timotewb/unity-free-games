@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Background
   - Platforms
+  - Ground Death
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - Background
   - Player
   - Platforms
-  - 
+  - City
   - 
   - 
   - 
@@ -43,8 +44,14 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Background
+  - name: Background01
+    uniqueID: 2923932927
+    locked: 0
+  - name: Background02
     uniqueID: 308247375
+    locked: 0
+  - name: Background03
+    uniqueID: 808101509
     locked: 0
   - name: Platforms
     uniqueID: 2648946383

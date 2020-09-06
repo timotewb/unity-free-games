@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Start.unity
+    guid: ffc402b9ff4c4044a8f32b1b2ab25f25
+  - enabled: 1
+    path: Assets/Scenes/Pyrac City.unity
+    guid: 85de6267cb862fb45abbd5ec89e29c9e
   m_configObjects: {}

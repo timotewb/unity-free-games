@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
-    [SerializeField] private float moveSpeed = 6f;
+    public float moveSpeed = 6f;
     [SerializeField] private  float jumpForce = 20f;
     [SerializeField] private  float jumpStopForce = .75f;
     [SerializeField] private  float jumpTime = .13f;
@@ -79,5 +79,14 @@ public class PlayerMovement : MonoBehaviour
     bool IsGrounded(){
         RaycastHit2D rch2D = Physics2D.BoxCast(cc2D.bounds.center, cc2D.bounds.size, 0f, Vector2.down, .1f, platformLayerMask);
         return rch2D.collider != null;
+    }
+
+    // called auto by 2D physics engine
+    private void OnTriggerEnter2D(Collider2D triggerCollider)
+    {
+        if (triggerCollider.tag == "Ground Death")
+        {
+            print("Load Start Sreen.");
+        }
     }
 }
